@@ -1,6 +1,8 @@
 package com.zyy.class1;
 
 /**
+ * 展示线程具有随机性
+ * @author zyy
  *
  */
 public class MyThread2 extends Thread{
@@ -15,6 +17,7 @@ public class MyThread2 extends Thread{
 				System.out.println("run = " + Thread.currentThread().getName());
 			}
 		} catch (InterruptedException e) {
+			System.out.println("运行出错");
 		}
 	}
 	
@@ -30,6 +33,7 @@ public class MyThread2 extends Thread{
 				System.out.println("main = "+Thread.currentThread().getName());
 			}
 		} catch (InterruptedException e) {
+			System.out.println("运行出错");
 			
 		}
 	}
